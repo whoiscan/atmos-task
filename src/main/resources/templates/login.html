@@ -16,11 +16,11 @@
                 <div class="card-body">
                     <form th:action="@{/auth/sign/in}" method="post" class="form-group">
                         <label for="username" class="font-weight-bold">Логин</label>
-                        <input class="form-control" type="text" id="username" name="username" placeholder="Username">
+                        <input class="form-control" type="text" id="username" name="username" placeholder="Логин">
                         <label for="password" class="font-weight-bold mt-3">Пароль</label>
                         <input class="form-control" type="password" id="password" name="password"
-                               placeholder="Password">
-                        <input type="submit" class="btn btn-success mt-4 mr-5" style="width: 100px" value="Sign in">
+                               placeholder="Пароль">
+                        <input type="submit" class="btn btn-success mt-4 mr-5" style="width: 100px" value="Логин">
                         <div th:if="${errorMessage}" class="alert alert-danger" th:text="${errorMessage}">
                         </div>
                     </form>
